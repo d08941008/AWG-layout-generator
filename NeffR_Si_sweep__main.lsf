@@ -1,0 +1,12 @@
+fname = 'NeffR_Si_test20220328.dat';
+
+a = readdata(fname);
+format long;
+
+for(i = 1:size(a, 1)){
+    switchtolayout;
+    setanalysis('bend radius', a(i, 1)*1e-6);
+    findmodes;
+    a(i, 2) = real(getdata('mode1', 'neff'));
+}
+write(fname, num2str(a), 'overwrite');

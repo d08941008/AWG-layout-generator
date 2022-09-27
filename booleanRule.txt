@@ -1,0 +1,5 @@
+1. merge AWs into one peace of 3705
+2. merge input/output ports of 3705
+3. change two slabs of 3705 to leayer 999/0
+4. 3705-3704-3505 = 37/5
+5. 999/0 - 3704 - 3507 = 35/5

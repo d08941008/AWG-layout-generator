@@ -1,0 +1,5 @@
+wl = linspace(6.199e-10, 2.5e-4, 512);
+a = matrix(512, 2);
+a(:, 1) = wl*1e6;
+a(:, 2) = real(getindex('Si (Silicon) - Palik', c/wl));
+write('Si_material.dat', num2str(a), 'overwrite');
